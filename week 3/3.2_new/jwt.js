@@ -57,19 +57,3 @@ app.get("/users", function (req, res) {
 });
 
 app.listen(3000)
-Load earlier comments...
-@chiragyadav2003
-chiragyadav2003 commented on Dec 21, 2023
-Using Find Method:
-function userExists(username, password) {
-    let userExist = false;
-
-    ALL_USERS.find((user) => {
-        if (user.username === username && user.password === password) {
-            userExist = true;
-        }
-    })
-
-
-    return userExist;
-}
