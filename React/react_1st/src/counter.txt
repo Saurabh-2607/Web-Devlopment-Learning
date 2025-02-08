@@ -1,0 +1,33 @@
+import { useState } from 'react';
+
+function App() {
+  return <div>
+      <Counter></Counter>
+    </div>
+}
+
+function Counter(){
+
+  const [count, setcount] = useState(0);
+
+  function increaseCount(){
+    setcount(count + 1);    
+  }
+
+  function decreaseCount(){
+    setcount(count - 1);    
+  }
+
+  function ResetCount(){
+    setcount(0);    
+  }
+
+
+  return <div>
+      <h1 id="text">{count}</h1>
+      <button onClick={increaseCount}>Increase Count</button>
+      <button onClick={decreaseCount}>Decrease Count</button>
+      <button onClick={ResetCount}>Reset Count</button>
+    </div>
+  }
+export default App
