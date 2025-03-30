@@ -1,12 +1,12 @@
 const express = require('express');
-
+const verifyToken = require('../middlewares/authMiddleware');
 const router = express.Router();
 
 // only admin can access this route
 
-router.get('/admin', (req, res) => {
+router.get('/admin', verifyToken, (req, res) => {
     res.json({ message: 'Hello Admin' });
-    console.log("Admin has accessed the route");
+    console.log(`Admin ${req.user.username} has accessed the route`);
 });
     
 
