@@ -1,0 +1,20 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true,
+        ".vscode": true,
+        "package-lock.json": true,
+        ".gitignore": true,
+        ".env.example": true
+    },
+    "hide-files.files": [
+        ".vscode",
+        "package-lock.json",
+        ".gitignore",
+        ".env.example"
+    ]
+}
